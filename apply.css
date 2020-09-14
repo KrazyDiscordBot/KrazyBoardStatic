@@ -91,23 +91,23 @@ body{
     display: table;
     clear: both;
   }
-  #ann{
+  .ann{
     color: lightgoldenrodyellow;
     text-align: center;
   }
-  p#ann2{
+  p.ann2{
     color: lightgoldenrodyellow;
     text-align: left;
     padding-top: 30px;
     padding-left: 200px;
   }
-  #fll{
+  .fll{
       float: center;
     color: lightgoldenrodyellow;
     text-align: center;
     padding-top: 15px;
   }
-  a#ol{
+  a.ol{
     text-decoration: none;
     color: blue;
   }
@@ -115,12 +115,12 @@ body{
       padding-left: 10px;
 
   }
-  #cont:after {
+ .cont:after {
     content: "";
     display: table;
     clear: both;
   }
-  div#cat{
+  div.cat{
     float: left;
     border-radius: 12px;
     height: 500px;
@@ -128,7 +128,7 @@ body{
     width: 30%;
     border: 3px solid #27FFBF;
   }
-  div#cmd{
+  div.cmd{
     height: 500px;
     overflow: auto;
     border-radius: 12px;
@@ -136,33 +136,33 @@ body{
     width: 55%;
     border: 3px solid #27FFBF;
   }
-  #sp{
+  .sp{
     width: 5%;
     float: left;
   }
-  #sp2{
+  .sp2{
     height: 50px;
   }
-  p#cat{
+  p.cat{
     font-size: 18px;
     color: aliceblue;
     font-weight: 800;
     text-align: center;
     padding: 0;
   }
-  p#cmd{
+  p.cmd{
     font-size: 18px;
     color: aliceblue;
     font-weight: 600;
     text-align: center;
   }
-  div#bgc:hover{
+  div.bgc:hover{
     background-color: skyblue;
   }
-  div#bgc:hover p#cat{
+  div.bgc:hover p#cat{
     color:black;
   }
-  div#bgc{
+  div.bgc{
     padding: 0;
     border:0;
     margin: 0%;
