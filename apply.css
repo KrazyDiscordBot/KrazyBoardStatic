@@ -1,0 +1,232 @@
+a:hover{
+    color: black;
+    top: 50px;
+}
+body{
+  background-image: radial-gradient(#010720, black);
+  }
+#title-exe{
+    color: aliceblue;
+    text-align: center;
+}
+#mainxd{
+    text-decoration: none; color: aliceblue;
+}
+.navbar {
+    overflow: hidden;
+    background-color:#8abbe9;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navbar a {
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+    color: #010720;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #010720;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: rgb(247, 164, 11);
+    color:teal;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8abbe9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    font-weight: bold;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a
+  :hover {
+    background-color: #ddd;
+  }
+  .show {
+    display: block;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    width: 12%;
+    padding: 10px;
+  }
+  .column2 {
+    float: left;
+    width: 76%;
+    padding: 10px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #ann{
+    color: lightgoldenrodyellow;
+    text-align: center;
+  }
+  p#ann2{
+    color: lightgoldenrodyellow;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 200px;
+  }
+  #fll{
+      float: center;
+    color: lightgoldenrodyellow;
+    text-align: center;
+    padding-top: 15px;
+  }
+  a#ol{
+    text-decoration: none;
+    color: blue;
+  }
+  a:hover{
+      padding-left: 10px;
+
+  }
+  #cont:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  div#cat{
+    float: left;
+    border-radius: 12px;
+    height: 500px;
+    overflow: auto;
+    width: 30%;
+    border: 3px solid #27FFBF;
+  }
+  div#cmd{
+    height: 500px;
+    overflow: auto;
+    border-radius: 12px;
+    float: left;
+    width: 55%;
+    border: 3px solid #27FFBF;
+  }
+  #sp{
+    width: 5%;
+    float: left;
+  }
+  #sp2{
+    height: 50px;
+  }
+  p#cat{
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 800;
+    text-align: center;
+    padding: 0;
+  }
+  p#cmd{
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 600;
+    text-align: center;
+  }
+  div#bgc:hover{
+    background-color: skyblue;
+  }
+  div#bgc:hover p#cat{
+    color:black;
+  }
+  div#bgc{
+    padding: 0;
+    border:0;
+    margin: 0%;
+  }
+  #anime{
+    font-size: 16px;
+    color: rgb(20, 187, 179);
+    font-weight: 500;
+    text-align: left;
+  } 
+  #animediv{
+    display: block;
+  }
+  #infodiv{
+    display: none;
+  }
+  #supportdiv{
+    display: none;
+  }
+  #configdiv{
+    display: none;
+  }
+  #economydiv{
+    display: none;
+  }
+  #fundiv{
+    display: none;
+  }
+  #gamesdiv{
+    display: none;
+  }
+  #generaldiv{
+    display: none;
+  }
+  #imagediv{
+    display: none;
+  }
+  #moderationdiv{
+    display: none;
+  }
+  #pokemondiv{
+    display: none;
+  }
+  #xpdiv{
+    display: none;
+  }
+  #otherdiv{
+    display: none;
+  }
+  @media only screen and (max-width:800px) {
+     div#cmd,div#cat {
+      width: 100%;
+      border: 3px solid #27FFBF;
+      border-radius: 12px;
+    height: 500px;
+    overflow: auto;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    div#cmd,div#cat {
+      width: 100%;
+      border: 3px solid #27FFBF;
+      border-radius: 12px;
+    height: 500px;
+    overflow: auto;
+    }
+  }
