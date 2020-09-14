@@ -165,7 +165,7 @@ body{
     text-align: center;
   }
   div.bgc:hover{
-    background-color: skyblue;
+    background-color: #660663;
   }
   div.bgc:hover p#cat{
     color:black;
