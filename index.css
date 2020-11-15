@@ -1,163 +1,293 @@
-#userann{
- color: lightgoldenrodyellow;
-    text-align: center; 
+/*
+grey : #a3a8a5
+black : #141414
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins";
+  box-sizing: border-box;
 }
-a:hover{
-    color: black;
-    top: 50px;
-}
-/*#010720*/
-body{
-    background-image: radial-gradient(#010720, black);
-}
-#title-exe{
-    color: aliceblue;
-    text-align: center;
-}
-#mainxd{
-    text-decoration: none; color: aliceblue;
-}
-.navbar {
-    overflow: hidden;
-    background-color:#8abbe9;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .navbar a {
-    font-weight: bold;
-    float: left;
-    font-size: 16px;
-    color: #010720;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: #010720;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: rgb(247, 164, 11);
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #8abbe9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    font-weight: bold;
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  .dropdown-content a
-  :hover {
-    background-color: #ddd;
-  }
-  .show {
-    display: block;
-  }
-  * {
+
+* {
+    padding:0;
+    margin:0;
     box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
   }
-  .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-    height: 300px;
-    overflow: auto;
-    border: 3px solid cyan;
-    margin-top: 15px;
+
+div#first-big-div , div#second-big-div{
+    padding-top: 50px;
+    background-color: #141414;
+    background-image: url("./wavelight.svg");
+    background-position-y:bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+}
+
+div#second-big-div {
+    display: block;
+    background-image: url("./wavedark.svg");
+    padding-top: 0px;
+    background-color: #a3a8a5;
+    height: auto;
+    padding-bottom: 400px;
+}
+
+nav {
+    font-size: 22px;
     border-radius: 12px;
+    background-color: #141414;
+    box-shadow: 0px 0px 25px 1px #a3a3a3;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 25px;
+    align-items: center;
+    display: flex;
+    height: 40px;   
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+.content-body {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding: 25px;
+    justify-content: space-between;
+    margin-top: 55px;
   }
-  .column2 {
-    margin-top: 15px;
-    float: left;
-    height: 300px;
-    overflow: auto;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 46%;
-    padding: 10px;
-    border: 3px solid cyan;
-    border-radius: 12px;
+  
+  .content-body h1 {
+    font-size: 64px;
+    color: #eaeaea;
+    font-weight: lighter;
   }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  
+  .content-body aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  p.ann{
-    color: lightgoldenrodyellow;
+  
+  #button  {
+    background-color: #eaeaea;
+    font-size: 22px;
+    padding: 15px;
+    width: 180px;
+    font-weight: 900;
     text-align: center;
+    border-radius: 35px;
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.25);
   }
-  ul#upd{
-    color: lightgoldenrodyellow;
+
+  div#stats-container {
+    padding-top: 0px;
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: space-between;
   }
-  p.lis{
-    size: 2px;
-    block-size: 4px;
-    color: lightgoldenrodyellow;
+
+  div.stat-card {
     text-align: center;
+    margin: 0 auto;
+    border-radius: 35px;
+    box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.35);
+    padding: 18px;
+    background-color: #141414;
+    color: #eaeaea;
+    font-size: 18px;
   }
-  #credit:hover{
-    color: #010720;
-    background-color: #660663;
-    font-weight: 800;
+
+  div#button a {
+      text-decoration: none;
+      color: #141414;
   }
+  
+footer {
+    height: 200px;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#footer-shit {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color: #eaeaea;
+    margin: 0 auto;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+  
+  footer h1 {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #eaeaea;
+  }
+  
+  footer ul li a {
+      text-decoration: none;
+      font-size: 16px;
+    font-weight: normal;
+    color: #eaeaea;
+  }
+
+  div.feature-container {
+      padding-top: 0px;
+      display: flex;
+      margin: 0 auto;
+      width: 70%;
+      justify-content: space-between;
+  }
+
+  h1.feature-head {
+      font-size: 28px;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      font-weight: 800;
+      padding-top: 0px;
+      padding-bottom: 20px;
+      color: #141414;
+  }
+
+  div.feature-card {
+      background-color: #141414;
+      border-radius: 18px;
+      margin: 0 auto;
+      height: 200px;
+      margin-bottom: 30px;
+      margin-top: 15px;
+      color: #a3a8a5;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.35);
+    padding: 18px;
+  }
+
   @media only screen and (max-width:800px) {
-    .column,.column2 {
-      margin: 0px;
-      width: 100%;
-      margin-top: 25px;
+      img#bot-pfp{
+          display: none;
+      }
+      nav {
+          height: auto;
+          display: block;
+      }
+      nav a {
+          display: block;
+          padding-bottom: 8px;
+      }
+      div.feature-container {
+          display: block;
+      }
+      div#second-big-div {
+          padding-bottom: 100px;
+      }
+      div#stats-container {
+          display: block;
+      }
+      div.stat-card {
+          margin-bottom: 20px;
+      }
+  }
+
+.custom-select {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-family: Arial;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    border-radius: 10px;
+    background-color: #141414;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;  
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+.select-items div,
+.select-selected {
+    color: #a3a8a5;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(24, 23, 23, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: #141414;
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(206, 198, 198, 0.1);
+}
+
+.command-div {
+    background-color: #141414;
+    box-shadow: 0px 0px 35px 5px rgba(0, 0, 0, 0.55);
+    border-radius: 18px;
+    width: 70%;
+    color: #d1cfcf;
+    margin: 0% auto;
     height: auto;
-    overflow: auto;
-    }
-  }
-  @media only screen and (max-width:500px) {
-    .column,.column2 {
-      width: 100%;
-      margin-top: 25px;
-    height: auto;
-    overflow: auto;
-    }
-  }
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #010720; 
-    border-radius: 12px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 12px; 
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-    border-radius: 12px;
-  }
-  ::-webkit-scrollbar-corner{
-      display: none;
-  }
+    padding: 25px;
+    display: none;
+}
+
+.command-name-head {
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #a3a3a3;
+}
+
+.commands-visible {
+    display: block;
+}
