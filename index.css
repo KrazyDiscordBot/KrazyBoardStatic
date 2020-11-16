@@ -311,6 +311,12 @@ footer {
       margin-top:20px;     
  margin-bottom:25px;
     }
+   .feature-card-head{
+     margin: 0 auto;
+      text-align: center;
+     width:100%;
+     color:red;
+   }
     h1.feature-head {
       width:100%;
       margin:0 auto;
@@ -327,3 +333,13 @@ footer {
       margin-top:20px;
     }
   }
+
+@media only screen and (max-width:1000px) {
+    div.feature-container{
+        display: block;
+    }
+  div.feature-card {
+        height: 250px;
+    width:80%;
+    }
+}
