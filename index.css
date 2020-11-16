@@ -24,6 +24,7 @@ body::-webkit-scrollbar {
 
 div#first-big-div , div#second-big-div{
     padding-top: 50px;
+  padding-bottom:50px;
     background-color: #141414;
     background-image: url("./wavelight.svg");
     background-position-y:bottom;
@@ -297,6 +298,9 @@ footer {
       div#second-big-div {
           padding-bottom: 100px;
       }
+   div#first-big-div {
+     padding-bottom:100px;
+   }
       div#stats-container {
           display: block;
       }
@@ -310,6 +314,7 @@ footer {
       margin:0 auto;
       margin-top:20px;     
  margin-bottom:25px;
+      height:300px;
     }
     h1.feature-head {
       width:100%;
