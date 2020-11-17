@@ -1,7 +1,7 @@
-let wavedark = "url('wavedark.svg')";
-let wavelight = "url('wavelight.svg')"
-let wavepurple = "url('wavepurple.svg')";
-let wavewhite = "url('wavewhite.svg')";
+let wavedark = "url('./wavedark.svg')";
+let wavelight = "url('./wavelight.svg')"
+let wavepurple = "url('./wavepurple.svg')";
+let wavewhite = "url('./wavewhite.svg')";
 
 let theElement, a, b, c;
 let x = document.getElementsByClassName("custom-select");
@@ -100,12 +100,11 @@ function modeChecker() {
     let r = document.getElementsByClassName("select-items");
     let s = document.getElementById("command-note");
     let t = document.getElementsByClassName("command-div");
-    let u = document.getElementById("command-name-head");
+    let u = document.getElementsByClassName("command-name-head");
     let aa = document.getElementById("modeChoose");
     if (typeof (Storage) != undefined) {
         if (localStorage.getItem("mode") == "light") {
             aa.checked = true;
-          document.getElementById('bot-pfp').style.display = 'none';
             a.style.backgroundColor = "#7851a9";
             a.style.backgroundImage = wavewhite
             b.style.backgroundColor = "#f6f5f7";
@@ -155,15 +154,6 @@ function modeChecker() {
                 for (let o = 0; o < r[i].children.length; o++) {
                     r[i].children[o].style.color = "#f6f5f7";
                 }
-            }
-            if (s && t && u) {
-                s.style.backgroundColor = "#7851a9";
-                s.style.boxShadow = "0px 0px 15px 3px #64038a";
-                s.style.color = "#f6f5f7";
-                t.style.backgroundColor = "#7851a9";
-                t.style.boxShadow = "0px 0px 15px 3px #64038a";
-                t.style.color = "#f6f5f7";
-                u.style.color = "#f6f5f7";
             }
         } else {
             aa.checked = false;
@@ -225,7 +215,9 @@ function modeChecker() {
                 t.style.backgroundColor = "#141414";
                 t.style.boxShadow = "0px 0px 15px 3px #64038a";
                 t.style.color = "#a3a8a5";
-                u.style.color = "#a3a8a5";
+                for(let i=0;i<u.length;i++){
+                    u[i].style.color = "#a3a8a5";
+                }
             }
         }
     } else {
@@ -288,7 +280,9 @@ function modeChecker() {
             t.style.backgroundColor = "#141414";
             t.style.boxShadow = "0px 0px 15px 3px #64038a";
             t.style.color = "#a3a8a5";
-            u.style.color = "#a3a8a5";
+            for(let i=0;i<u.length;i++){
+                u[i].style.color = "#a3a8a5";
+            }
         }
     }
 }
@@ -315,7 +309,7 @@ function mode(which) {
     let r = document.getElementsByClassName("select-items");
     let s = document.getElementById("command-note");
     let t = document.getElementsByClassName("command-div");
-    let u = document.getElementById("command-name-head");
+    let u = document.getElementsByClassName("command-name-head");
 
     /**
      * Purple  : #7851a9
@@ -328,7 +322,6 @@ function mode(which) {
             localStorage.setItem("mode", "light")
         }
         a.style.backgroundColor = "#7851a9";
-      document.getElementById('bot-pfp').style.display = 'none';
         a.style.backgroundImage = wavewhite
         b.style.backgroundColor = "#f6f5f7";
         b.style.backgroundImage = wavepurple
@@ -385,7 +378,9 @@ function mode(which) {
             t.style.backgroundColor = "#7851a9";
             t.style.boxShadow = "0px 0px 15px 3px #64038a";
             t.style.color = "#f6f5f7";
-            u.style.color = "#f6f5f7";
+            for(let i=0;i<u.length;i++){
+                u[i].style.color = "#f6f5f7";
+            }
         }
     } else {
         if (typeof (Storage) != undefined) {
@@ -449,7 +444,9 @@ function mode(which) {
             t.style.backgroundColor = "#141414";
             t.style.boxShadow = "0px 0px 15px 3px #64038a";
             t.style.color = "#a3a8a5";
-            u.style.color = "#a3a8a5";
+           for(let i=0;i<u.length;i++){
+                u[i].style.color = "#a3a8a5";
+            }
         }
     }
 }
@@ -457,5 +454,4 @@ function mode(which) {
 function aye() {
     mode(document.getElementById("modeChoose").checked ? "light" : "dark");
 }
-
 document.getElementById("modeChoose").addEventListener("input", aye);
