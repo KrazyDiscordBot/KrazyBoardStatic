@@ -1,188 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="title" content="Krazy bot" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Krazy bot" />
-    <meta name="theme-color" content="#191722" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.krazyboard.glitch.me" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Krazy Bot is an Multi-Purpose Discord Bot with 250+ commands and with an Active Support"
-    />
-    <meta
-      property="og:description"
-      content="Krazy Bot is an Multi-Purpose Discord Bot with 250+ commands and with an Active Support"
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.bot-list.xyz/i/4646724e28a90eda42aa0cbdcc480fb6"
-    />
+
+<head>
+    <meta name="title" content="Krazy bot">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Krazy bot">
+    <meta name="theme-color" content="#191722">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.krazyboard.glitch.me">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Krazy Bot is an Multi-Purpose Discord Bot with 250+ commands and with an Active Support">
+    <meta property="og:description" content="Krazy Bot is an Multi-Purpose Discord Bot with 250+ commands and with an Active Support" />
+    <meta property="og:image" content="https://cdn.bot-list.xyz/i/4646724e28a90eda42aa0cbdcc480fb6" />
     <meta property="og:url" content="https://www.krazyboard.glitch.me" />
     <meta property="og:site_name" content="krazyboard" />
-    <meta name="twitter:title" content="Krazy Bot" />
-    <meta
-      name="twitter:description"
-      content="Krazy Bot is an Multi-Purpose Discord Bot with 250+ commands and with an Active Support"
-    />
-    <meta
-      name="twitter:image"
-      content="https://cdn.bot-list.xyz/i/4646724e28a90eda42aa0cbdcc480fb6"
-    />
-    <link
-      rel="icon"
-      href="https://cdn.bot-list.xyz/i/4646724e28a90eda42aa0cbdcc480fb6"
-    />
+    <meta name="twitter:title" content="Krazy Bot">
+    <meta name="twitter:description" content="Krazy Bot is an Multi-Purpose Discord Bot with 250+ commands and with an Active Support">
+    <meta name="twitter:image" content="https://cdn.bot-list.xyz/i/4646724e28a90eda42aa0cbdcc480fb6">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--
+        <meta name="twitter:site" content="@USERNAME">
+        <meta name="twitter:creator" content="@USERNAME">
+    -->
+    <link rel="icon" href="https://cdn.bot-list.xyz/i/4646724e28a90eda42aa0cbdcc480fb6">
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Krazy Board</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="first-big-div">
-      <nav>
-        <a href="./command.html">Commands</a>
-        <a
-          target="_blank"
-          href="https://botlists.com/bot/743834886833438770/vote"
-          >Vote</a
-        >
-        <a href="http://www.paypal.me/kartikepoor">Donate</a>
-        <a href="https://discord.gg/ZWHb6sR">Support</a>
-        <a href="https://www.botlists.com/bot/743834886833438770/invite"
-          >Invite</a
-        >
-      </nav>
-      <section class="content-body">
-        <aside>
-          <h1>Krazy Bot</h1>
-          <div id="button">
-            <a href="https://www.botlists.com/bot/743834886833438770/invite"
-              >Invite
-            </a>
-          </div>
-        </aside>
-        <img
-          id="bot-pfp"
-          src="https://cdn.bot-list.xyz/i/4646724e28a90eda42aa0cbdcc480fb6"
-          width="200px"
-        />
-      </section>
+        <nav id="nav-bar">
+          <a class="nav-links" href="./command.html">Commands</a>
+            <a class="nav-links" target="_blank" href="https://botlists.com/bot/743834886833438770/vote">Vote</a>
+            <a class="nav-links" href="http://www.paypal.me/kartikepoor">Donate</a>
+            <a class="nav-links" href="https://discord.gg/ZWHb6sR">Support</a>
+            <a class="nav-links" href="https://www.botlists.com/bot/743834886833438770/invite">Invite</a>
+        </nav>
+        <section class="content-body">
+            <aside>
+                <h1 id="main-head-top">Krazy Bot</h1>
+                <div id="button">
+                    <a id="main-a-top" href="https://www.botlists.com/bot/743834886833438770/invite">Invite </a>
+                </div>
+            </aside>
+            <img id="bot-pfp" src="https://cdn.bot-list.xyz/i/4646724e28a90eda42aa0cbdcc480fb6" width="200px" />
+        </section>
     </div>
     <div id="second-big-div">
-      <h1 class="feature-head">Features</h1>
-      <div class="feature-container">
-        <div class="feature-card">
-          <h1>Server Management</h1>
-          <p>
-            Krazy Bot have many features for Managing Servers like Custom
-            Suggestions , complains Other than those It have various commands
-            like for announcements , polls , An embed Builder for your Server
-          </p>
+        <h1 class="feature-head">Features</h1>
+        <div class="feature-container">
+            <div class="feature-card">
+                <h1 class="feature-card-heading">Server Management</h1>
+                <p>Krazy Bot have many features for Managing Servers like Custom Suggestions , complains Other than
+                    those It have various commands like for announcements , polls</p>
+            </div>
+            <div class="feature-card">
+                <h1 class="feature-card-heading">Fun</h1>
+                <p>Krazy Bot also have various fun commands for enjoying on discord with friends , It also have some
+                    games along with a small Currency, It also have Image manuplation commands</p>
+            </div>
+            <div class="feature-card">
+                <h1 class="feature-card-heading">Specials</h1>
+                <p>Krazy Bot have many special features like Tickets, Welcome Messages , Join roles , Join name , Leave
+                    messages, Reaction roles , Auto roles and many more things</p>
+            </div>
         </div>
-        <div class="feature-card">
-          <h1>Fun</h1>
-          <p>
-            Krazy Bot also have various fun commands for enjoying on discord
-            with friends , It also have some games along with a small Currency,
-            It also have some Image manuplation commands, roasting , jokes ,
-            facts and lot more
-          </p>
+        <div class="feature-container">
+            <div class="feature-card">
+                <h1 class="feature-card-heading">Moderation</h1>
+                <p>Krazy bot have many moderation commands for cleaning the chat , managing Users, Roles , channels It makes all the stuff really easy for you, and It have many Automated Moderation features too like Anti-spam , Anti-link and more</p>
+            </div>
+            <div class="feature-card">
+                <h1 class="feature-card-heading">Support</h1>
+                <p>Krazy Bot have 24/7 Support, You can complain/Suggest anytime from any server where krazy bot is
+                    present via k!bsug, k!bcomp command and Support Server is always there for your support with a good
+                    and friendly Staff 
+                </p>
+            </div>
+            <div class="feature-card">
+                <h1 class="feature-card-heading">Others</h1>
+                <p>There are many more features like Covid Statistics , General commands includes commands for getting
+                    information , Message Tracker and Notes with various management commands</p>
+            </div>
         </div>
-        <div class="feature-card">
-          <h1>Specials</h1>
-          <p>
-            Krazy Bot have many special features like Tickets, Welcome Messages
-            , Join roles , Join name , Leave messages, Reaction roles , Auto
-            roles , An XP System With Level Rewards, Counting and Attendance
-            game and many more things
-          </p>
+        <h1 class="feature-head">Statistics</h1>
+        <div id="stats-container">
+            <div class="stat-card">
+                <h1>Server : 145</h1>
+            </div>
+            <div class="stat-card">
+                <h1>Users : 110k+</h1>
+            </div>
         </div>
-      </div>
-      <div class="feature-container">
-        <div class="feature-card">
-          <h1>Moderation</h1>
-          <p>
-            Krazy bot have many moderation commands for cleaning the chat ,
-            managing Users, Roles , channels It makes all the stuff really easy
-            for you, and It have many Automated Moderation features too like
-            Anti-spam , Anti-link and more
-          </p>
-        </div>
-        <div class="feature-card">
-          <h1>Support</h1>
-          <p>
-            Krazy Bot have 24/7 Support, You can complain/Suggest anytime from
-            any server where krazy bot is present via k!bsug, k!bcomp command
-            and Support Server is always there for your support with a good and
-            friendly Staff
-          </p>
-        </div>
-        <div class="feature-card">
-          <h1>Others</h1>
-          <p>
-            There are many more features like Covid Statistics , General
-            commands includes commands for getting information , Message Tracker
-            for weekly/Monthly Messages and Notes with various management
-            commands
-          </p>
-        </div>
-      </div>
-      <h1 class="feature-head">Statistics</h1>
-      <div id="stats-container">
-        <div class="stat-card">
-          <h1 id="server-show">Server : 148</h1>
-          <script src="./server.js"> </script>
-        </div>
-        <div class="stat-card">
-          <h1>Users : 111k+</h1>
-        </div>
-      </div>
     </div>
-    <footer>
-      <div id="footer-shit">
-        <div id="Credits-container">
-          <h1>Credits</h1>
-          <ul>
-            <li><a href="https://www.no-api-key.com">API</a></li>
-            <li><a href="https://botlists.com">QGV</a></li>
-            <li><a href="https://covid-19-statistics.glitch.me">Nora</a></li>
-          </ul>
+    <footer id="footer-bottom">
+        <div id="footer-shit">
+
+            <div id="Credits-container">
+                <h1 class="footer-heads">Credits</h1>
+                <ul>
+                    <li><a href="https://www.no-api-key.com">API</a></li>
+                    <li><a href="https://botlists.com">QGV</a></li>
+                    <li><a href="https://covid-19-statistics.glitch.me">Nora</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h1 class="footer-heads">Krazy Bot</h1>
+                <ul>
+                    <li><a href="https://www.botlists.com/bot/743834886833438770/invite">Invite</a></li>
+                    <li><a href="https://www.botlists.com/bot/743834886833438770/vote">Vote</a></li>
+                    <li><a href="http://www.paypal.me/kartikepoor">Donate</a></li>
+                </ul>
+                <input type="checkbox" id="modeChoose"> <p style="display: inline;" id="mode-thing">Light Mode</p>
+            </div>
+            <div class="footer-links">
+                <h1 class="footer-heads">Links</h1>
+                <ul>
+                    <li><a href="https://discord.gg/K4qjUR3">Discord</a></li>
+                    <li><a href="https://www.patreon.com/bePatron?u=41658675">Patreon</a></li>
+                    <li><a
+                            href="https://www.youtube.com/channel/UCABpwV-dHQTj7TBsTkwTdCA?view_as=subscriber">Youtube</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-links" id="krazy-footer">
-          <h1>Krazy Bot</h1>
-          <ul>
-            <li>
-              <a href="https://www.botlists.com/bot/743834886833438770/invite"
-                >Invite</a
-              >
-            </li>
-            <li>
-              <a href="https://www.botlists.com/bot/743834886833438770/vote"
-                >Vote</a
-              >
-            </li>
-            <li><a href="http://www.paypal.me/kartikepoor">Donate</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h1>Links</h1>
-          <ul>
-            <li><a href="https://discord.gg/K4qjUR3">Discord</a></li>
-            <li>
-              <a href="https://www.patreon.com/bePatron?u=41658675">Patreon</a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCABpwV-dHQTj7TBsTkwTdCA?view_as=subscriber"
-                >Youtube</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
     </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
