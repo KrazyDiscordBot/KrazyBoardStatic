@@ -3,6 +3,8 @@ let wavelight = "url('./wavelight.svg')"
 let wavepurple = "url('./wavepurple.svg')";
 let wavewhite = "url('./wavewhite.svg')";
 
+let bf = document.getElementById("bot-pfp");
+
 let theElement, a, b, c;
 let x = document.getElementsByClassName("custom-select");
 for (let i = 0; i < x.length; i++) {
@@ -105,6 +107,7 @@ function modeChecker() {
     if (typeof (Storage) != undefined) {
         if (localStorage.getItem("mode") == "light") {
             aa.checked = true;
+          bf.style.display="none";
             a.style.backgroundColor = "#7851a9";
             a.style.backgroundImage = wavewhite
             b.style.backgroundColor = "#f6f5f7";
@@ -168,13 +171,14 @@ function modeChecker() {
             a.style.backgroundImage = wavelight;
             b.style.backgroundColor = "#a3a8a5";
             b.style.backgroundImage = wavedark;
+          bf.style.display="block";
             c.style.boxShadow = "0px 0px 25px 1px #a3a3a3";
             c.style.backgroundColor = "#141414";
             for (let i = 0; i < d.length; i++) {
                 console.log(i)
                 d[i].style.color = "#a3a8a5";
             }
-            e.style.color = "#f6f5f7";
+            e.style.color = "#a3a8a5";
             f.style.boxShadow = "0px 0px 15px 1px #a3a3a3";
             f.style.backgroundColor = "#a3a8a5"
             g.style.color = "#a3a8a5";
@@ -233,12 +237,13 @@ function modeChecker() {
         b.style.backgroundColor = "#a3a8a5";
         b.style.backgroundImage = wavedark;
         c.style.boxShadow = "0px 0px 25px 1px #a3a3a3";
+      bf.style.display="block";
         c.style.backgroundColor = "#141414";
         for (let i = 0; i < d.length; i++) {
             console.log(i)
             d[i].style.color = "#a3a8a5";
         }
-        e.style.color = "#f6f5f7";
+        e.style.color = "#a3a8a5"
         f.style.boxShadow = "0px 0px 15px 1px #a3a3a3";
         f.style.backgroundColor = "#a3a8a5"
         g.style.color = "#a3a8a5";
@@ -329,6 +334,7 @@ function mode(which) {
         a.style.backgroundColor = "#7851a9";
         a.style.backgroundImage = wavewhite
         b.style.backgroundColor = "#f6f5f7";
+      bf.style.display="none";
         b.style.backgroundImage = wavepurple
         c.style.boxShadow = "0px 0px 25px 1px #41025a";
         c.style.backgroundColor = "#7851a9";
@@ -395,12 +401,13 @@ function mode(which) {
         b.style.backgroundColor = "#a3a8a5";
         b.style.backgroundImage = wavedark;
         c.style.boxShadow = "0px 0px 25px 1px #a3a3a3";
+      bf.style.display="block";
         c.style.backgroundColor = "#141414";
         for (let i = 0; i < d.length; i++) {
             console.log(i)
             d[i].style.color = "#a3a8a5";
         }
-        e.style.color = "#f6f5f7";
+        e.style.color = "#a3a8a5";
         f.style.boxShadow = "0px 0px 15px 1px #a3a3a3";
         f.style.backgroundColor = "#a3a8a5"
         g.style.color = "#a3a8a5";
