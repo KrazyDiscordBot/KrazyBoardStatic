@@ -132,12 +132,6 @@ function modeChecker() {
             for (let i = 0; i < m.length; i++) {
                 m[i].style.color = "#f6f5f7";
             }
-            for (let i = 0; i < m.length; i++) {
-                m[i].style.color = "#7851a9";
-            }
-            for (let i = 0; i < n.length; i++) {
-                n[i].style.color = "#7851a9";
-            }
             for (let i = 0; i < o.length; i++) {
                 o[i].style.boxShadow = "0px 0px 15px 5px #41025a";
                 o[i].style.color = "#f6f5f7";
@@ -155,6 +149,19 @@ function modeChecker() {
                     r[i].children[o].style.color = "#f6f5f7";
                 }
             }
+          if (s && t && u) {
+            s.style.backgroundColor = "#7851a9";
+            s.style.boxShadow = "0px 0px 15px 3px #64038a";
+            s.style.color = "#f6f5f7";
+            for(let i=0;i<t.length;i++){
+                t[i].style.backgroundColor = "#141414";
+                t[i].style.boxShadow = "0px 0px 15px 3px #f6f5f7";
+                t[i].style.color = "#a3a8a5";
+            }
+            for(let i=0;i<u.length;i++){
+                u[i].style.color = "#f6f5f7";
+            }
+        }
         } else {
             aa.checked = false;
             a.style.backgroundColor = "#141414";
@@ -185,9 +192,6 @@ function modeChecker() {
             for (let i = 0; i < m.length; i++) {
                 m[i].style.color = "#a3a8a5";
             }
-            for (let i = 0; i < m.length; i++) {
-                m[i].style.color = "#141414";
-            }
             for (let i = 0; i < n.length; i++) {
                 n[i].style.color = "#141414";
             }
@@ -210,11 +214,13 @@ function modeChecker() {
             }
             if (s && t && u) {
                 s.style.backgroundColor = "#141414";
-                s.style.boxShadow = "0px 0px 15px 3px #64038a";
+                s.style.boxShadow = "0px 0px 15px 3px #a3a8a5";
                 s.style.color = "#a3a8a5";
-                t.style.backgroundColor = "#141414";
-                t.style.boxShadow = "0px 0px 15px 3px #64038a";
-                t.style.color = "#a3a8a5";
+                for(let i=0;i<t.length;i++){
+                t[i].style.backgroundColor = "#141414";
+                t[i].style.boxShadow = "0px 0px 15px 3px #a3a8a5";
+                t[i].style.color = "#a3a8a5";
+            }
                 for(let i=0;i<u.length;i++){
                     u[i].style.color = "#a3a8a5";
                 }
@@ -250,9 +256,6 @@ function modeChecker() {
         for (let i = 0; i < m.length; i++) {
             m[i].style.color = "#a3a8a5";
         }
-        for (let i = 0; i < m.length; i++) {
-            m[i].style.color = "#141414";
-        }
         for (let i = 0; i < n.length; i++) {
             n[i].style.color = "#141414";
         }
@@ -275,11 +278,13 @@ function modeChecker() {
         }
         if (s && t && u) {
             s.style.backgroundColor = "#141414";
-            s.style.boxShadow = "0px 0px 15px 3px #64038a";
+            s.style.boxShadow = "0px 0px 15px 3px #a3a8a5";
             s.style.color = "#a3a8a5";
-            t.style.backgroundColor = "#141414";
-            t.style.boxShadow = "0px 0px 15px 3px #64038a";
-            t.style.color = "#a3a8a5";
+            for(let i=0;i<t.length;i++){
+                t[i].style.backgroundColor = "#141414";
+                t[i].style.boxShadow = "0px 0px 15px 3px #a3a8a5";
+                t[i].style.color = "#a3a8a5";
+            }
             for(let i=0;i<u.length;i++){
                 u[i].style.color = "#a3a8a5";
             }
@@ -348,9 +353,6 @@ function mode(which) {
         for (let i = 0; i < m.length; i++) {
             m[i].style.color = "#f6f5f7";
         }
-        for (let i = 0; i < m.length; i++) {
-            m[i].style.color = "#7851a9";
-        }
         for (let i = 0; i < n.length; i++) {
             n[i].style.color = "#7851a9";
         }
@@ -375,9 +377,11 @@ function mode(which) {
             s.style.backgroundColor = "#7851a9";
             s.style.boxShadow = "0px 0px 15px 3px #64038a";
             s.style.color = "#f6f5f7";
-            t.style.backgroundColor = "#7851a9";
-            t.style.boxShadow = "0px 0px 15px 3px #64038a";
-            t.style.color = "#f6f5f7";
+            for(let i=0;i<t.length;i++){
+                t[i].style.backgroundColor = "#141414";
+                t[i].style.boxShadow = "0px 0px 15px 3px #f6f5f7";
+                t[i].style.color = "#a3a8a5";
+            }
             for(let i=0;i<u.length;i++){
                 u[i].style.color = "#f6f5f7";
             }
@@ -414,9 +418,6 @@ function mode(which) {
         for (let i = 0; i < m.length; i++) {
             m[i].style.color = "#a3a8a5";
         }
-        for (let i = 0; i < m.length; i++) {
-            m[i].style.color = "#141414";
-        }
         for (let i = 0; i < n.length; i++) {
             n[i].style.color = "#141414";
         }
@@ -439,11 +440,13 @@ function mode(which) {
         }
         if (s && t && u) {
             s.style.backgroundColor = "#141414";
-            s.style.boxShadow = "0px 0px 15px 3px #64038a";
+            s.style.boxShadow = "0px 0px 15px 3px #a3a8a5";
             s.style.color = "#a3a8a5";
-            t.style.backgroundColor = "#141414";
-            t.style.boxShadow = "0px 0px 15px 3px #64038a";
-            t.style.color = "#a3a8a5";
+            for(let i=0;i<t.length;i++){
+                t[i].style.backgroundColor = "#141414";
+                t[i].style.boxShadow = "0px 0px 15px 3px #a3a8a5";
+                t[i].style.color = "#a3a8a5";
+            }
            for(let i=0;i<u.length;i++){
                 u[i].style.color = "#a3a8a5";
             }
