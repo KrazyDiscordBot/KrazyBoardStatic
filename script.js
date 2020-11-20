@@ -135,6 +135,9 @@ function modeChecker() {
             for (let i = 0; i < m.length; i++) {
                 m[i].style.color = "#f6f5f7";
             }
+          for (let i = 0; i < n.length; i++) {
+                n[i].style.color = "#7851a9";
+            }
             for (let i = 0; i < o.length; i++) {
                 o[i].style.boxShadow = "0px 0px 15px 5px #41025a";
                 o[i].style.color = "#f6f5f7";
@@ -145,6 +148,7 @@ function modeChecker() {
             }
             for (let i = 0; i < q.length; i++) {
                 q[i].style.backgroundColor = "#7851a9";
+                              q[i].style.color = "#f6f5f7";
             }
             for (let i = 0; i < r.length; i++) {
                 r[i].backgroundColor = "#7851a9";
@@ -157,9 +161,9 @@ function modeChecker() {
             s.style.boxShadow = "0px 0px 15px 3px #64038a";
             s.style.color = "#f6f5f7";
             for(let i=0;i<t.length;i++){
-                t[i].style.backgroundColor = "#141414";
+                t[i].style.backgroundColor = "#7851a9";
                 t[i].style.boxShadow = "0px 0px 15px 3px #f6f5f7";
-                t[i].style.color = "#a3a8a5";
+                t[i].style.color = "#f6f5f7";
             }
             for(let i=0;i<u.length;i++){
                 u[i].style.color = "#f6f5f7";
@@ -209,6 +213,7 @@ function modeChecker() {
             }
             for (let i = 0; i < q.length; i++) {
                 q[i].style.backgroundColor = "#141414";
+              q[i].style.color = "#a3a8a5";
             }
             for (let i = 0; i < r.length; i++) {
                 r[i].backgroundColor = "#141414";
@@ -274,6 +279,7 @@ function modeChecker() {
         }
         for (let i = 0; i < q.length; i++) {
             q[i].style.backgroundColor = "#141414";
+          q[i].style.color = "#a3a8a5";
         }
         for (let i = 0; i < r.length; i++) {
             r[i].backgroundColor = "#141414";
@@ -372,6 +378,7 @@ function mode(which) {
         }
         for (let i = 0; i < q.length; i++) {
             q[i].style.backgroundColor = "#7851a9";
+          q[i].style.color = "#f6f5f7";
         }
         for (let i = 0; i < r.length; i++) {
             r[i].backgroundColor = "#7851a9";
@@ -384,9 +391,9 @@ function mode(which) {
             s.style.boxShadow = "0px 0px 15px 3px #64038a";
             s.style.color = "#f6f5f7";
             for(let i=0;i<t.length;i++){
-                t[i].style.backgroundColor = "#141414";
+                t[i].style.backgroundColor = "#7851a9";
                 t[i].style.boxShadow = "0px 0px 15px 3px #f6f5f7";
-                t[i].style.color = "#a3a8a5";
+                t[i].style.color = "#f6f5f7";
             }
             for(let i=0;i<u.length;i++){
                 u[i].style.color = "#f6f5f7";
@@ -438,6 +445,7 @@ function mode(which) {
         }
         for (let i = 0; i < q.length; i++) {
             q[i].style.backgroundColor = "#141414";
+          q[i].style.color = "#a3a8a5";
         }
         for (let i = 0; i < r.length; i++) {
             r[i].backgroundColor = "#141414";
