@@ -175,7 +175,9 @@ function modeChecker() {
             a.style.backgroundImage = wavelight;
             b.style.backgroundColor = "#a3a8a5";
             b.style.backgroundImage = wavedark;
-          bf.style.display="block";
+          if (screen.width > 800) {
+            bf.style.display = "block";
+        }
             c.style.boxShadow = "0px 0px 25px 1px #a3a3a3";
             c.style.backgroundColor = "#141414";
             for (let i = 0; i < d.length; i++) {
@@ -242,7 +244,9 @@ function modeChecker() {
         b.style.backgroundColor = "#a3a8a5";
         b.style.backgroundImage = wavedark;
         c.style.boxShadow = "0px 0px 25px 1px #a3a3a3";
-      bf.style.display="block";
+      if (screen.width > 800) {
+            bf.style.display = "block";
+        }
         c.style.backgroundColor = "#141414";
         for (let i = 0; i < d.length; i++) {
             console.log(i)
@@ -408,7 +412,9 @@ function mode(which) {
         b.style.backgroundColor = "#a3a8a5";
         b.style.backgroundImage = wavedark;
         c.style.boxShadow = "0px 0px 25px 1px #a3a3a3";
-      bf.style.display="block";
+      if (screen.width > 800) {
+            bf.style.display = "block";
+        }
         c.style.backgroundColor = "#141414";
         for (let i = 0; i < d.length; i++) {
             console.log(i)
