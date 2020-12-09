@@ -58,6 +58,53 @@ nav {
   margin: 0 auto;
 }
 
+
+div.privacy-container {
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 50px;
+    width: 70%;
+    display: block;
+    background-color: #141414;
+    box-shadow: 0px 0px 30px 6px #08000a;
+    height: 690px;
+}
+
+div.privacy {
+    width: 90%;
+    padding: 9px;
+    display: block;
+}
+
+h1.privacy-head {
+    width: 100%;
+    float: left;
+    padding: 3px;
+    color: #f6f5f7;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+p.privacy-stuff {
+    width: 100%;
+    float: left;
+    padding: 5px;
+    color: #f6f6f6;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p.privacy-content {
+    width: 100%;
+    float: left;
+    padding: 3px;
+    color: #a3a8a5;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
 nav a {
   text-decoration: none;
   color: #a3a3a3;
