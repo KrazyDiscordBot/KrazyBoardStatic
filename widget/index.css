@@ -24,7 +24,7 @@ div#first-big-div, div#second-big-div {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #141414;
-    background-image: url("../wavelight.svg");
+    background-image: url("./wavelight.svg");
     background-position-y: bottom;
     background-repeat: no-repeat;
     width: 100%;
@@ -33,7 +33,7 @@ div#first-big-div, div#second-big-div {
 
 div#second-big-div {
     display: block;
-    background-image: url("../wavedark.svg");
+    background-image: url("./wavedark.svg");
     padding-top: 0px;
     background-color: #a3a8a5;
     height: auto;
@@ -465,6 +465,5 @@ p.privacy-content {
 }
 
 * {
-  margin 0 auto;
-  width:100%;
+  m
 }
