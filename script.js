@@ -4,6 +4,9 @@ let wavepurple = "url('./wavepurple.svg')";
 let wavewhite = "url('./wavewhite.svg')";
 
 let bf = document.getElementById("bot-pfp");
+if(localStorage?.getItem("mode") == null) {
+  localStorage.setItem("mode","light") 
+}
 
 let theElement, a, b, c;
 let x = document.getElementsByClassName("custom-select");
